@@ -1,0 +1,26 @@
+{
+  "name": "track-api",
+  "version": "1.0.0",
+  "description": "Nodejs API Express, Mongoose,",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arleyduarte/track-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arleyduarte/track-api/issues"
+  },
+  "homepage": "https://github.com/arleyduarte/track-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.2",
+    "nodemon": "^2.0.4"
+  }
+}
