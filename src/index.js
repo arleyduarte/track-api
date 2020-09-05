@@ -3,7 +3,7 @@ require("./models/Track");
 
 const express = require("express");
 const mongoose = require("mongoose");
-const authRoutes = require("./authRoutes.js");
+const authRoutes = require("./routes/authRoutes.js");
 const bodyParser = require("body-parser");
 const requireAuth = require("./middlewares/requireAuth");
 const trackRoutes = require("./routes/trackRoutes");

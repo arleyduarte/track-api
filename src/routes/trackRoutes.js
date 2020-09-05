@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const requireAuth = require("../middlewares/requireAuth");
-const { route } = require("../authRoutes");
+const { route } = require("./authRoutes");
 
 const Track = mongoose.model("Track");
 

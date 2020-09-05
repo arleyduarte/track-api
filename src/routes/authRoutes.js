@@ -7,20 +7,28 @@ const router = express.Router();
 
 router.post("/signup", async (req, res) => {
   const { email, password } = req.body;
+  console.log("signup");
+  console.log(req.body);
 
   try {
     const user = new User({ email, password });
     await user.save();
 
     const token = jwt.sign({ userId: user._id }, "MY_SECRET_KEY");
+
+    console.log(token);
+    console.log("END signup");
+
     res.send({ token });
   } catch (err) {
+    console.log(err);
     return res.status(422).send(err.message);
   }
 });
 
 router.post("/signin", async (req, res) => {
   const { email, password } = req.body;
+  console.log("signin");
   console.log(req.body);
 
   if (!email || !password) {
